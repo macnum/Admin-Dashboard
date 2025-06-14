@@ -230,11 +230,11 @@ h2 {
     }
     .side-content:first-child {
         & .rect {
-            border-bottom: 0.02rem solid var(--light-black);
             padding: 10px 7px;
             border-radius: 5px;
-            
-            
+        }
+         .rect:nth-child(1), .rect:nth-child(2) {
+            border-bottom: 0.02rem solid var(--light-black);
         }
     }
 
