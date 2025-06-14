@@ -162,6 +162,45 @@ body {
 
 
 
+.article {
+    padding: 15px;
+   
+
+     & .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+       
+    }
+    & .card {
+        height: 150px;
+        border-left: 5px solid var(--dark-yellow);
+        padding: 5px 15px;
+        display: grid;
+        background-color: var(--white);
+        font-size: 0.7rem;
+        align-items: center;
+        color: var(--light-black);
+        border-radius: 0.45rem;
+        
+        &  p:first-child {
+            color: #000;
+            font-size: .9rem;
+    
+        }
+        
+        & > :first-child + div {
+            justify-self: end;
+        }
+    }
+    & .card  .title {
+        font-weight: 700;
+        font-size: 1.0625rem;
+    }
+
+}
+
+
 
 
 .side_bar {
