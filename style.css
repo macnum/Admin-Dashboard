@@ -40,7 +40,9 @@ body {
     width:30px;
     vertical-align:bottom;
 }
-
+input {
+    padding: 10px 20px;
+}
 
 
 .header {
@@ -243,6 +245,11 @@ h2 {
             display: grid;
             grid-template-columns: 50px 1fr ;
             padding: 15px;
+
+            .text :first-child {
+                font-weight: 500;
+                color: var(--black);
+            }
         }
     }
 }
