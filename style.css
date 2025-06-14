@@ -239,7 +239,11 @@ h2 {
     }
 
     .trending {
-    
+       div .rect {
+            display: grid;
+            grid-template-columns: 50px 1fr ;
+            padding: 15px;
+        }
     }
 }
 
