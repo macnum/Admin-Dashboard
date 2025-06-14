@@ -199,12 +199,52 @@ body {
     }
 
 }
-
+h2 {
+    margin-bottom: 20px;
+}
 
 
 
 .side_bar {
     display: grid;
     padding: 15px;
+    gap: 10px;
+
+
+
+    .side-content {
+        padding: 15px;
+        & h2 + div {
+            background-color: var(--white);
+            border-radius: 5px;
+            display: grid;
+            gap: 0.5rem;
+            padding: 1rem;
+        }
+        p {
+            color: var(--light-black);
+        }
+
+        
+        
+    }
+    .side-content:first-child {
+        & .rect {
+            border-bottom: 0.02rem solid var(--light-black);
+            padding: 10px 7px;
+            border-radius: 5px;
+            
+            
+        }
+    }
+
+    .trending {
+    
+    }
+}
+
+.side-content  > div {
+    display: grid;
+    gap: 20px;
 }
 
